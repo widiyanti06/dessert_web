@@ -1,4 +1,128 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgba(87, 179, 59, 0.596);
+    background-image: url("../assets/img/salad3.png");
+    backdrop-filter: blur(50px);
+    background-size: 150vh;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.navbar {
+    padding: 20px 0 20px 0;
+    position: fixed;
+    width: 100%;
+}
+
+.container {
+    width: 80%;
+    margin-inline: auto;
+}
+
+.navbar .box-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .box-navbar .logo h1 {
+    color: rgba(87, 179, 59, 0.842);
+    font-size: 28px;
+}
+
+.navbar .box-navbar .logo span {
+    color: orange;
+}
+
+.navbar .box-navbar .menu {
+    display: flex;
+    column-gap: 20px;
+}
+
+.navbar .box-navbar .menu .active a {
+    background-color: rgba(87, 179, 59, 0.842);
+    border-radius: 50px;
+}
+
+.navbar .box-navbar .menu li {
+    list-style-type: none;
+}
+
+.navbar .box-navbar .menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px 10px 15px;
+}
+
+.navbar .box-navbar .menu li a:hover {
+    background-color: rgba(87, 179, 59, 0.842);
+    border-radius: 50px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.menu-bar {
+    color: white;
+    font-size: 28px;
+    display: none;
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.hero .box-hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: 1fr;
+    column-gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero .box-hero .box:nth-child(1) h1 {
+    color: white;
+    font-size: 3vw;
+    line-height: 1.3;
+    margin-bottom: 20px
+}
+
+.hero .box-hero .box:nth-child(1) p {
+    list-style: 2;
+    color: black;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.hero .box-hero .box:nth-child(1) button {
+    width: 170px;
+    height: 40px;
+    background-color: rgba(87, 179, 59, 0.596);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hero .box-hero .box:nth-child(1) button:hover {
+    background-color: rgba(87, 179, 59, 0.842);
+    transition: all 0.3s ease;
+}
+
+.hero .box-hero .box:nth-child(2) img {
+    width: 100%;
+    text-align: center;
+    padding: 40px;
 }
